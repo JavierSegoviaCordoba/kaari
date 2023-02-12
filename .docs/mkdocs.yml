@@ -1,10 +1,10 @@
-site_name: '"{{ name }}"'
-site_description: '"{{ description }}"'
+site_name: 'Kaari'
+site_description: 'Kotlin Multiplatform architecture for frontend applications'
 site_author: 'Javier Segovia Córdoba'
 remote_branch: gh-pages
 
-repo_name: '"{{ repo }}"'
-repo_url: 'https://github.com/JavierSegoviaCordoba/"{{ repo }}"'
+repo_name: 'kaari'
+repo_url: 'https://github.com/JavierSegoviaCordoba/kaari'
 
 copyright: 'Copyright &copy; 2021 Javier Segovia Córdoba'
 
