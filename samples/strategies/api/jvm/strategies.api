@@ -1,0 +1,89 @@
+public final class com/javiersc/kaari/samples/strategies/internal/CharacterEntity {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lcom/javiersc/kaari/samples/strategies/internal/CharacterEntity;
+	public static synthetic fun copy$default (Lcom/javiersc/kaari/samples/strategies/internal/CharacterEntity;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/javiersc/kaari/samples/strategies/internal/CharacterEntity;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getId ()Ljava/lang/String;
+	public final fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kaari/samples/strategies/internal/CharacterQueries : app/cash/sqldelight/TransacterImpl {
+	public fun <init> (Lapp/cash/sqldelight/db/SqlDriver;)V
+	public final fun insert (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun selectAll ()Lapp/cash/sqldelight/Query;
+	public final fun selectAll (Lkotlin/jvm/functions/Function2;)Lapp/cash/sqldelight/Query;
+	public final fun selectById (Ljava/lang/String;)Lapp/cash/sqldelight/Query;
+	public final fun selectById (Ljava/lang/String;Lkotlin/jvm/functions/Function2;)Lapp/cash/sqldelight/Query;
+}
+
+public abstract interface class com/javiersc/kaari/samples/strategies/internal/KaariDatabase : app/cash/sqldelight/Transacter {
+	public static final field Companion Lcom/javiersc/kaari/samples/strategies/internal/KaariDatabase$Companion;
+	public abstract fun getCharacterQueries ()Lcom/javiersc/kaari/samples/strategies/internal/CharacterQueries;
+}
+
+public final class com/javiersc/kaari/samples/strategies/internal/KaariDatabase$Companion {
+	public final fun getSchema ()Lapp/cash/sqldelight/db/SqlSchema;
+	public final fun invoke (Lapp/cash/sqldelight/db/SqlDriver;)Lcom/javiersc/kaari/samples/strategies/internal/KaariDatabase;
+}
+
+public abstract interface class com/javiersc/samples/strategies/characters/AddCharacter {
+	public abstract fun invoke (Lcom/javiersc/samples/strategies/characters/Character;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/javiersc/samples/strategies/characters/AddCharacterImpl : com/javiersc/samples/strategies/characters/AddCharacter {
+	public fun <init> (Lcom/javiersc/kaari/samples/strategies/internal/KaariDatabase;)V
+	public fun invoke (Lcom/javiersc/samples/strategies/characters/Character;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/javiersc/samples/strategies/characters/Character {
+	public static final field Companion Lcom/javiersc/samples/strategies/characters/Character$Companion;
+	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lcom/javiersc/samples/strategies/characters/Character;
+	public static synthetic fun copy$default (Lcom/javiersc/samples/strategies/characters/Character;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/javiersc/samples/strategies/characters/Character;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getId ()Ljava/lang/String;
+	public final fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public static final fun write$Self (Lcom/javiersc/samples/strategies/characters/Character;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/javiersc/samples/strategies/characters/Character$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/javiersc/samples/strategies/characters/Character$$serializer;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/javiersc/samples/strategies/characters/Character;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/javiersc/samples/strategies/characters/Character;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/javiersc/samples/strategies/characters/Character$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/javiersc/samples/strategies/characters/GetCharacters {
+	public abstract fun invoke ()Lkotlinx/coroutines/flow/Flow;
+}
+
+public final class com/javiersc/samples/strategies/characters/GetCharactersImpl : com/javiersc/samples/strategies/characters/GetCharacters {
+	public fun <init> (Lkotlin/coroutines/CoroutineContext;Lcom/javiersc/kaari/samples/strategies/internal/KaariDatabase;)V
+	public fun invoke ()Lkotlinx/coroutines/flow/Flow;
+}
+
+public final class com/javiersc/samples/strategies/di/StrategiesModuleKt {
+	public static final fun getStrategiesModule ()Lorg/koin/core/module/Module;
+}
+
+public final class com/javiersc/samples/strategies/di/StrategiesModule_jvmKt {
+	public static final fun getStrategiesJvmModule ()Lorg/koin/core/module/Module;
+}
+

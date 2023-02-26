@@ -1,0 +1,17 @@
+public abstract class com/javiersc/kaari/viewmodel/KaariViewModel : com/javiersc/kaari/viewmodel/ViewModel, com/javiersc/kaari/presentation/core/KaariPresentation {
+	public static final field $stable I
+	public fun <init> (Lkotlinx/coroutines/CoroutineScope;)V
+	public fun CollectedEffect (Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;I)V
+	public fun effect (Ljava/lang/Object;)V
+	public fun effect (Lkotlin/jvm/functions/Function0;)V
+	public fun getEvents ()Lkotlinx/coroutines/flow/MutableSharedFlow;
+	public fun getScope ()Lkotlinx/coroutines/CoroutineScope;
+}
+
+public abstract class com/javiersc/kaari/viewmodel/ViewModel : androidx/lifecycle/ViewModel {
+	public static final field $stable I
+	public fun <init> ()V
+	public abstract fun getScope ()Lkotlinx/coroutines/CoroutineScope;
+	protected fun onCleared ()V
+}
+

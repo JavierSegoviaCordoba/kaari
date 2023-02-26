@@ -1,0 +1,15 @@
+CREATE TABLE CharacterEntity (
+  id TEXT NOT NULL PRIMARY KEY,
+  name TEXT NOT NULL UNIQUE
+);
+
+selectById:
+SELECT * FROM CharacterEntity WHERE id = :id;
+
+selectAll:
+SELECT *
+FROM CharacterEntity;
+
+insert:
+INSERT INTO CharacterEntity(id, name)
+VALUES (:id, :name);

@@ -5,7 +5,15 @@ plugins {
 hubdle {
     config {
         analysis()
-        binaryCompatibilityValidator()
+        binaryCompatibilityValidator {
+            apiValidation {
+                for (project in allprojects) {
+                    if (project.path.contains("sample")) {
+                        ignoredProjects += project.name
+                    }
+                }
+            }
+        }
         coverage()
         documentation {
             changelog()

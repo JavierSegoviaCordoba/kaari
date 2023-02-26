@@ -1,0 +1,15 @@
+public abstract interface class com/javiersc/kaari/presentation/core/KaariPresentation {
+	public abstract fun CollectedEffect (Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;I)V
+	public abstract fun effect (Ljava/lang/Object;)V
+	public abstract fun effect (Lkotlin/jvm/functions/Function0;)V
+	public abstract fun getEvents ()Lkotlinx/coroutines/flow/MutableSharedFlow;
+	public abstract fun getScope ()Lkotlinx/coroutines/CoroutineScope;
+	public abstract fun state (Landroidx/compose/runtime/Composer;I)Ljava/lang/Object;
+}
+
+public final class com/javiersc/kaari/presentation/core/KaariPresentation$DefaultImpls {
+	public static fun CollectedEffect (Lcom/javiersc/kaari/presentation/core/KaariPresentation;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;I)V
+	public static fun effect (Lcom/javiersc/kaari/presentation/core/KaariPresentation;Ljava/lang/Object;)V
+	public static fun effect (Lcom/javiersc/kaari/presentation/core/KaariPresentation;Lkotlin/jvm/functions/Function0;)V
+}
+
