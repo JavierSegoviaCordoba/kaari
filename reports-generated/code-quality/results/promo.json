@@ -1,0 +1,29 @@
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "severity": "High",
+  "comment": "Property \"strategiesModule\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/di/strategiesModule.kt",
+      "language": "kotlin",
+      "line": 12,
+      "offset": 5,
+      "length": 16,
+      "code": {
+        "startLine": 10,
+        "length": 16,
+        "offset": 32,
+        "surroundingCode": "import org.koin.dsl.module\n\nval strategiesModule = module {\n    single { KaariDatabase(get()) }\n    single { KaariDatabase.Schema }"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "aa2a4c546ab948a73a386d4cccf147e462f8bf35e5763ae9737bc91f6b8ab444"
+}]}

@@ -1,0 +1,200 @@
+{
+  "modules": [
+    {
+      "name": "kaari",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presentation-core",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presenter",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-viewmodel",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.apps",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.features",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.strategies",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.apps.android",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presentation-core.jvmMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presentation-core.jvmTest",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presentation-core.androidAndroidTestRelease",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presentation-core.androidTestFixtures",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presentation-core.androidTestFixturesDebug",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presentation-core.androidTestFixturesRelease",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presentation-core.commonMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presentation-core.commonTest",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presenter.jvmMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presenter.jvmTest",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presenter.androidAndroidTestRelease",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presenter.androidTestFixtures",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presenter.androidTestFixturesDebug",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presenter.androidTestFixturesRelease",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presenter.commonMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-presenter.commonTest",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-viewmodel.jvmMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-viewmodel.jvmTest",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-viewmodel.androidAndroidTestRelease",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-viewmodel.androidTestFixtures",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-viewmodel.androidTestFixturesDebug",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-viewmodel.androidTestFixturesRelease",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-viewmodel.commonMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.kaari-viewmodel.commonTest",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.features.jvmMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.features.jvmTest",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.features.androidAndroidTestRelease",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.features.androidTestFixtures",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.features.androidTestFixturesDebug",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.features.androidTestFixturesRelease",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.features.commonMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.features.commonTest",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.strategies.jvmMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.strategies.jvmTest",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.strategies.androidAndroidTestRelease",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.strategies.androidTestFixtures",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.strategies.androidTestFixturesDebug",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.strategies.androidTestFixturesRelease",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.strategies.commonMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "kaari.samples.strategies.commonTest",
+      "languageLevel": 17
+    }
+  ]
+}

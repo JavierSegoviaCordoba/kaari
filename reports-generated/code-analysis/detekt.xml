@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.3">
+<file name="samples/features/jvm/main/kotlin/com/javiersc/samples/features/_theme/Theme.jvm.kt">
+	<error line="9" column="86" severity="warning" message="This empty block of code can be removed." source="detekt.EmptyFunctionBlock" />
+	<error line="1" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+	<error line="9" column="24" severity="warning" message="Function names should match the pattern: [a-z][a-zA-Z0-9]*" source="detekt.FunctionNaming" />
+</file>
+<file name="kaari-presentation-core/common/main/kotlin/com/javiersc/kaari/presentation/core/KaariPresentation.kt">
+	<error line="17" column="9" severity="warning" message="Function names should match the pattern: [a-z][a-zA-Z0-9]*" source="detekt.FunctionNaming" />
+	<error line="29" column="5" severity="warning" message="This comment contains &apos;TODO:&apos; that has been defined as forbidden in detekt." source="detekt.ForbiddenComment" />
+</file>
+<file name="kaari-viewmodel/android/main/kotlin/com/javiersc/kaari/viewmodel/ViewModel.android.kt">
+	<error line="7" column="23" severity="warning" message="The file name &apos;ViewModel.android&apos; does not match the name of the single top-level declaration &apos;ViewModel&apos;." source="detekt.MatchingDeclarationName" />
+</file>
+<file name="kaari-viewmodel/jvm/main/kotlin/com/javiersc/kaari/viewmodel/ViewModel.jvm.kt">
+	<error line="6" column="23" severity="warning" message="The file name &apos;ViewModel.jvm&apos; does not match the name of the single top-level declaration &apos;ViewModel&apos;." source="detekt.MatchingDeclarationName" />
+</file>
+<file name="samples/features/android/main/kotlin/com/javiersc/samples/features/main/MainScreenPreview.android.kt">
+	<error line="10" column="5" severity="warning" message="Function names should match the pattern: [a-z][a-zA-Z0-9]*" source="detekt.FunctionNaming" />
+	<error line="19" column="45" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
+</file>
+<file name="samples/features/android/main/kotlin/com/javiersc/samples/features/_theme/Theme.android.kt">
+	<error line="1" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+	<error line="27" column="12" severity="warning" message="Function names should match the pattern: [a-z][a-zA-Z0-9]*" source="detekt.FunctionNaming" />
+</file>
+<file name="samples/features/android/main/kotlin/com/javiersc/samples/features/Preview.android.kt">
+	<error line="7" column="5" severity="warning" message="Function names should match the pattern: [a-z][a-zA-Z0-9]*" source="detekt.FunctionNaming" />
+</file>
+<file name="samples/features/common/main/kotlin/com/javiersc/samples/features/main/MainScreen.kt">
+	<error line="18" column="5" severity="warning" message="Function names should match the pattern: [a-z][a-zA-Z0-9]*" source="detekt.FunctionNaming" />
+	<error line="60" column="5" severity="warning" message="Function names should match the pattern: [a-z][a-zA-Z0-9]*" source="detekt.FunctionNaming" />
+	<error line="41" column="67" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
+</file>
+<file name="samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Color.kt">
+	<error line="1" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+	<error line="5" column="22" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
+	<error line="6" column="26" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
+	<error line="7" column="20" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
+	<error line="9" column="22" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
+	<error line="10" column="26" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
+	<error line="11" column="20" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
+</file>
+<file name="samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Type.kt">
+	<error line="1" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+<file name="samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Theme.kt">
+	<error line="1" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+	<error line="31" column="5" severity="warning" message="Function names should match the pattern: [a-z][a-zA-Z0-9]*" source="detekt.FunctionNaming" />
+	<error line="44" column="24" severity="warning" message="Function names should match the pattern: [a-z][a-zA-Z0-9]*" source="detekt.FunctionNaming" />
+</file>
+<file name="samples/features/common/main/kotlin/com/javiersc/samples/features/_di/presentationModule.kt">
+	<error line="1" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+<file name="samples/apps/android/main/kotlin/com/javiersc/kaari/samples/android/MainActivity.kt">
+	<error line="44" column="5" severity="warning" message="Function names should match the pattern: [a-z][a-zA-Z0-9]*" source="detekt.FunctionNaming" />
+</file>
+</checkstyle>

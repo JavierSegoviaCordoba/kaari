@@ -1,0 +1,210 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > KaariDatabaseImpl</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.javiersc.kaari.samples.strategies.internal.strategies</a>
+</div>
+
+<h1>Coverage Summary for Class: KaariDatabaseImpl (com.javiersc.kaari.samples.strategies.internal.strategies)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">KaariDatabaseImpl</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+    <td class="coverageStat"/>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/11)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">KaariDatabaseImpl$Schema</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/3)
+  </span>
+</td>
+    <td class="coverageStat"/>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/14)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/4)
+  </span>
+</td>
+    <td class="coverageStat"/>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/25)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.javiersc.kaari.samples.strategies.`internal`.strategies
+&nbsp;
+&nbsp;import app.cash.sqldelight.TransacterImpl
+&nbsp;import app.cash.sqldelight.db.AfterVersion
+&nbsp;import app.cash.sqldelight.db.QueryResult
+&nbsp;import app.cash.sqldelight.db.SqlDriver
+&nbsp;import app.cash.sqldelight.db.SqlSchema
+&nbsp;import com.javiersc.kaari.samples.strategies.`internal`.CharacterQueries
+&nbsp;import com.javiersc.kaari.samples.strategies.`internal`.KaariDatabase
+&nbsp;import kotlin.Int
+&nbsp;import kotlin.Unit
+&nbsp;import kotlin.reflect.KClass
+&nbsp;
+&nbsp;internal val KClass&lt;KaariDatabase&gt;.schema: SqlSchema
+&nbsp;  get() = KaariDatabaseImpl.Schema
+&nbsp;
+&nbsp;internal fun KClass&lt;KaariDatabase&gt;.newInstance(driver: SqlDriver): KaariDatabase =
+&nbsp;    KaariDatabaseImpl(driver)
+&nbsp;
+&nbsp;private class KaariDatabaseImpl(
+&nbsp;  driver: SqlDriver,
+<b class="nc">&nbsp;) : TransacterImpl(driver), KaariDatabase {</b>
+<b class="nc">&nbsp;  public override val characterQueries: CharacterQueries = CharacterQueries(driver)</b>
+&nbsp;
+&nbsp;  public object Schema : SqlSchema {
+&nbsp;    public override val version: Int
+<b class="nc">&nbsp;      get() = 1</b>
+&nbsp;
+&nbsp;    public override fun create(driver: SqlDriver): QueryResult&lt;Unit&gt; {
+<b class="nc">&nbsp;      driver.execute(null, &quot;&quot;&quot;</b>
+&nbsp;          |CREATE TABLE CharacterEntity (
+&nbsp;          |  id TEXT NOT NULL PRIMARY KEY,
+&nbsp;          |  name TEXT NOT NULL UNIQUE
+&nbsp;          |)
+<b class="nc">&nbsp;          &quot;&quot;&quot;.trimMargin(), 0)</b>
+<b class="nc">&nbsp;      return QueryResult.Unit</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public override fun migrate(
+&nbsp;      driver: SqlDriver,
+&nbsp;      oldVersion: Int,
+&nbsp;      newVersion: Int,
+&nbsp;      vararg callbacks: AfterVersion,
+<b class="nc">&nbsp;    ): QueryResult&lt;Unit&gt; = QueryResult.Unit</b>
+&nbsp;  }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-02-26 22:45</div>
+</div>
+</body>
+</html>

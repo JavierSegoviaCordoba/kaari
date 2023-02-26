@@ -1,0 +1,95 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > AddCharacter</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.javiersc.samples.strategies.characters</a>
+</div>
+
+<h1>Coverage Summary for Class: AddCharacter (com.javiersc.samples.strategies.characters)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+</tr>
+<tr>
+  <td class="name">AddCharacter</td>
+    <td class="coverageStat"/>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.javiersc.samples.strategies.characters
+&nbsp;
+&nbsp;import com.javiersc.kaari.samples.strategies.internal.KaariDatabase
+&nbsp;import kotlin.time.Duration.Companion.milliseconds
+&nbsp;import kotlinx.coroutines.delay
+&nbsp;
+&nbsp;interface AddCharacter {
+&nbsp;    suspend operator fun invoke(character: Character)
+&nbsp;}
+&nbsp;
+&nbsp;class AddCharacterImpl(
+&nbsp;    private val database: KaariDatabase,
+&nbsp;) : AddCharacter {
+&nbsp;
+&nbsp;    override suspend operator fun invoke(character: Character) {
+&nbsp;        delay(300.milliseconds)
+&nbsp;        val hasCharacter =
+&nbsp;            database.characterQueries.selectById(character.id).executeAsOneOrNull() != null
+&nbsp;        if (!hasCharacter) {
+&nbsp;            database.characterQueries.insert(character.id, character.name)
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-02-26 22:45</div>
+</div>
+</body>
+</html>
