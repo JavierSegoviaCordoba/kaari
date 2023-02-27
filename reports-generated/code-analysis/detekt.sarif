@@ -42,9 +42,9 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "endColumn": 24,
+                  "endColumn": 31,
                   "endLine": 17,
-                  "startColumn": 9,
+                  "startColumn": 16,
                   "startLine": 17
                 }
               }
@@ -65,9 +65,9 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "endColumn": 32,
+                  "endColumn": 39,
                   "endLine": 7,
-                  "startColumn": 23,
+                  "startColumn": 30,
                   "startLine": 7
                 }
               }
@@ -88,9 +88,9 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "endColumn": 32,
+                  "endColumn": 39,
                   "endLine": 6,
-                  "startColumn": 23,
+                  "startColumn": 30,
                   "startLine": 6
                 }
               }
@@ -296,9 +296,9 @@
                 },
                 "region": {
                   "endColumn": 45,
-                  "endLine": 1,
+                  "endLine": 3,
                   "startColumn": 1,
-                  "startLine": 1
+                  "startLine": 3
                 }
               }
             }
@@ -506,144 +506,6 @@
                   "endLine": 41,
                   "startColumn": 67,
                   "startLine": 41
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "This expression contains a magic number. Consider defining it to a well named constant."
-          },
-          "ruleId": "detekt.style.MagicNumber"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Color.kt",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "endColumn": 32,
-                  "endLine": 5,
-                  "startColumn": 22,
-                  "startLine": 5
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "This expression contains a magic number. Consider defining it to a well named constant."
-          },
-          "ruleId": "detekt.style.MagicNumber"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Color.kt",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "endColumn": 36,
-                  "endLine": 6,
-                  "startColumn": 26,
-                  "startLine": 6
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "This expression contains a magic number. Consider defining it to a well named constant."
-          },
-          "ruleId": "detekt.style.MagicNumber"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Color.kt",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "endColumn": 30,
-                  "endLine": 7,
-                  "startColumn": 20,
-                  "startLine": 7
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "This expression contains a magic number. Consider defining it to a well named constant."
-          },
-          "ruleId": "detekt.style.MagicNumber"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Color.kt",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "endColumn": 32,
-                  "endLine": 9,
-                  "startColumn": 22,
-                  "startLine": 9
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "This expression contains a magic number. Consider defining it to a well named constant."
-          },
-          "ruleId": "detekt.style.MagicNumber"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Color.kt",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "endColumn": 36,
-                  "endLine": 10,
-                  "startColumn": 26,
-                  "startLine": 10
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "This expression contains a magic number. Consider defining it to a well named constant."
-          },
-          "ruleId": "detekt.style.MagicNumber"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Color.kt",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "endColumn": 30,
-                  "endLine": 11,
-                  "startColumn": 20,
-                  "startLine": 11
                 }
               }
             }

@@ -1,29 +1,57 @@
 {"version":"3","listProblem":[{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
-  "type": "Unused symbol",
+  "type": "Unused receiver parameter",
   "severity": "High",
-  "comment": "Property \"strategiesModule\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "comment": "Receiver parameter is never used",
+  "detailsInfo": "Reports receiver parameter of extension functions and properties that is not used.\n\n**Remove redundant receiver parameter** can be used to amend the code automatically.",
   "sources": [
     {
       "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/di/strategiesModule.kt",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
       "language": "kotlin",
-      "line": 12,
-      "offset": 5,
-      "length": 16,
+      "line": 31,
+      "offset": 13,
+      "length": 15,
       "code": {
-        "startLine": 10,
-        "length": 16,
-        "offset": 32,
-        "surroundingCode": "import org.koin.dsl.module\n\nval strategiesModule = module {\n    single { KaariDatabase(get()) }\n    single { KaariDatabase.Schema }"
+        "startLine": 29,
+        "length": 15,
+        "offset": 51,
+        "surroundingCode": "    map(CharacterEntity::toCharacter)\n\nprivate fun CharacterEntity.toCharacter(): Character = Character(id, name)\n"
       }
     }
   ],
   "attributes": {
     "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "UnusedReceiverParameter"
+  },
+  "hash": "81920bde59bd4484d2a866a31e5392bafb9d22007fa6fed7bddfed4de5be0342"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "severity": "High",
+  "comment": "Property \"presentationModule\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/features/common/main/kotlin/com/javiersc/samples/features/_di/presentationModule.kt",
+      "language": "kotlin",
+      "line": 7,
+      "offset": 5,
+      "length": 18,
+      "code": {
+        "startLine": 5,
+        "length": 18,
+        "offset": 32,
+        "surroundingCode": "import org.koin.dsl.module\n\nval presentationModule = module { singleOf(::MainViewModel) }\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.features.commonMain",
     "inspectionName": "UnusedSymbol"
   },
-  "hash": "aa2a4c546ab948a73a386d4cccf147e462f8bf35e5763ae9737bc91f6b8ab444"
+  "hash": "44d45eca0fa92ca80c3de65721b4a0ccfb1d366bb07cecb11d4497b5daed7ed8"
 }]}

@@ -97,11 +97,11 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;import kotlinx.coroutines.CoroutineScope
 &nbsp;import kotlinx.coroutines.flow.MutableSharedFlow
 &nbsp;
-&nbsp;abstract class KaariViewModel&lt;Effect, State&gt;(
+&nbsp;public abstract class KaariViewModel&lt;Effect, State&gt;(
 <b class="fc">&nbsp;    override val scope: CoroutineScope,</b>
 <b class="fc">&nbsp;) : ViewModel(), KaariPresentation&lt;Effect, State&gt; {</b>
 &nbsp;
-<b class="fc">&nbsp;    override val events = MutableSharedFlow&lt;Effect&gt;(extraBufferCapacity = 20)</b>
+<b class="fc">&nbsp;    override val events: MutableSharedFlow&lt;Effect&gt; = MutableSharedFlow(extraBufferCapacity = 20)</b>
 &nbsp;}
 </code>
 </pre>
@@ -126,7 +126,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2023-02-26 22:45</div>
+    <div style="float:right;">generated on 2023-02-27 00:10</div>
 </div>
 </body>
 </html>

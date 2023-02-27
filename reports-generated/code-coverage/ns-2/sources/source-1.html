@@ -245,23 +245,23 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;import kotlinx.coroutines.flow.MutableSharedFlow
 &nbsp;import kotlinx.coroutines.launch
 &nbsp;
-&nbsp;interface KaariPresentation&lt;Effect, State&gt; {
+&nbsp;public interface KaariPresentation&lt;Effect, State&gt; {
 &nbsp;
-&nbsp;    val scope: CoroutineScope
-&nbsp;    val events: MutableSharedFlow&lt;Effect&gt;
+&nbsp;    public val scope: CoroutineScope
+&nbsp;    public val events: MutableSharedFlow&lt;Effect&gt;
 &nbsp;
-&nbsp;    @Composable fun state(): State
+&nbsp;    @Composable public fun state(): State
 &nbsp;
 &nbsp;    @Composable
-<b class="pc">&nbsp;    fun CollectedEffect(block: suspend CoroutineScope.(effect: Effect) -&gt; Unit) {</b>
+<b class="pc">&nbsp;    public fun CollectedEffect(block: suspend CoroutineScope.(effect: Effect) -&gt; Unit) {</b>
 <b class="pc">&nbsp;        LaunchedEffect(Unit) { events.collect { effect -&gt; block(this, effect) } }</b>
 &nbsp;    }
 &nbsp;
-&nbsp;    fun effect(effect: () -&gt; Effect) {
+&nbsp;    public fun effect(effect: () -&gt; Effect) {
 <b class="fc">&nbsp;        scope.launch { events.emit(effect()) }</b>
 &nbsp;    }
 &nbsp;
-&nbsp;    fun effect(effect: Effect) {
+&nbsp;    public fun effect(effect: Effect) {
 <b class="fc">&nbsp;        scope.launch { events.emit(effect) }</b>
 &nbsp;    }
 &nbsp;
@@ -293,7 +293,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2023-02-26 22:45</div>
+    <div style="float:right;">generated on 2023-02-27 00:10</div>
 </div>
 </body>
 </html>

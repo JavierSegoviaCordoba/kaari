@@ -14,11 +14,11 @@
 
 ## Complexity Report
 
-* 1,087 lines of code (loc)
+* 1,085 lines of code (loc)
 
-* 910 source lines of code (sloc)
+* 907 source lines of code (sloc)
 
-* 536 logical lines of code (lloc)
+* 537 logical lines of code (lloc)
 
 * 31 comment lines of code (cloc)
 
@@ -26,15 +26,15 @@
 
 * 15 cognitive complexity
 
-* 28 number of total code smells
+* 22 number of total code smells
 
 * 3% comment source ratio
 
 * 87 mcc per 1,000 lloc
 
-* 52 code smells per 1,000 lloc
+* 40 code smells per 1,000 lloc
 
-## Findings (28)
+## Findings (22)
 
 ### empty-blocks, EmptyFunctionBlock (1)
 
@@ -62,16 +62,16 @@ Function names should follow the naming convention set in the configuration.
 
 [Documentation](https://detekt.dev/docs/rules/naming#functionnaming)
 
-* kaari-presentation-core/common/main/kotlin/com/javiersc/kaari/presentation/core/KaariPresentation.kt:17:9
+* kaari-presentation-core/common/main/kotlin/com/javiersc/kaari/presentation/core/KaariPresentation.kt:17:16
 ```
 Function names should match the pattern: [a-z][a-zA-Z0-9]*
 ```
 ```kotlin
-14     @Composable fun state(): State
+14     @Composable public fun state(): State
 15 
 16     @Composable
-17     fun CollectedEffect(block: suspend CoroutineScope.(effect: Effect) -> Unit) {
-!!         ^ error
+17     public fun CollectedEffect(block: suspend CoroutineScope.(effect: Effect) -> Unit) {
+!!                ^ error
 18         LaunchedEffect(Unit) { events.collect { effect -> block(this, effect) } }
 19     }
 20 
@@ -224,7 +224,7 @@ If a source file contains only a single non-private top-level class or object, t
 
 [Documentation](https://detekt.dev/docs/rules/naming#matchingdeclarationname)
 
-* kaari-viewmodel/android/main/kotlin/com/javiersc/kaari/viewmodel/ViewModel.android.kt:7:23
+* kaari-viewmodel/android/main/kotlin/com/javiersc/kaari/viewmodel/ViewModel.android.kt:7:30
 ```
 The file name 'ViewModel.android' does not match the name of the single top-level declaration 'ViewModel'.
 ```
@@ -232,15 +232,15 @@ The file name 'ViewModel.android' does not match the name of the single top-leve
 4  import kotlinx.coroutines.CoroutineScope
 5  import kotlinx.coroutines.cancel
 6  
-7  actual abstract class ViewModel : AndroidViewModel() {
-!                        ^ error
+7  public actual abstract class ViewModel : AndroidViewModel() {
+!                               ^ error
 8  
-9      actual abstract val scope: CoroutineScope
+9      public actual abstract val scope: CoroutineScope
 10 
 
 ```
 
-* kaari-viewmodel/jvm/main/kotlin/com/javiersc/kaari/viewmodel/ViewModel.jvm.kt:6:23
+* kaari-viewmodel/jvm/main/kotlin/com/javiersc/kaari/viewmodel/ViewModel.jvm.kt:6:30
 ```
 The file name 'ViewModel.jvm' does not match the name of the single top-level declaration 'ViewModel'.
 ```
@@ -248,10 +248,10 @@ The file name 'ViewModel.jvm' does not match the name of the single top-level de
 3  import kotlinx.coroutines.CoroutineScope
 4  import kotlinx.coroutines.cancel
 5  
-6  actual abstract class ViewModel actual constructor() {
-!                        ^ error
+6  public actual abstract class ViewModel actual constructor() {
+!                               ^ error
 7  
-8      actual abstract val scope: CoroutineScope
+8      public actual abstract val scope: CoroutineScope
 9  
 
 ```
@@ -288,16 +288,18 @@ Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*
 
 ```
 
-* samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Color.kt:1:1
+* samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Color.kt:3:1
 ```
 Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*
 ```
 ```kotlin
-1 package com.javiersc.samples.features._theme
-! ^ error
+1 @file:Suppress("MagicNumber")
 2 
-3 import androidx.compose.ui.graphics.Color
+3 package com.javiersc.samples.features._theme
+! ^ error
 4 
+5 import androidx.compose.ui.graphics.Color
+6 
 
 ```
 
@@ -362,7 +364,7 @@ This comment contains 'TODO:' that has been defined as forbidden in detekt.
 
 ```
 
-### style, MagicNumber (8)
+### style, MagicNumber (2)
 
 Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.
 
@@ -384,99 +386,6 @@ This expression contains a magic number. Consider defining it to a well named co
 
 ```
 
-* samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Color.kt:5:22
-```
-This expression contains a magic number. Consider defining it to a well named constant.
-```
-```kotlin
-2 
-3 import androidx.compose.ui.graphics.Color
-4 
-5 val Purple80 = Color(0xFFD0BCFF)
-!                      ^ error
-6 val PurpleGrey80 = Color(0xFFCCC2DC)
-7 val Pink80 = Color(0xFFEFB8C8)
-8 
-
-```
-
-* samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Color.kt:6:26
-```
-This expression contains a magic number. Consider defining it to a well named constant.
-```
-```kotlin
-3  import androidx.compose.ui.graphics.Color
-4  
-5  val Purple80 = Color(0xFFD0BCFF)
-6  val PurpleGrey80 = Color(0xFFCCC2DC)
-!                           ^ error
-7  val Pink80 = Color(0xFFEFB8C8)
-8  
-9  val Purple40 = Color(0xFF6650a4)
-
-```
-
-* samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Color.kt:7:20
-```
-This expression contains a magic number. Consider defining it to a well named constant.
-```
-```kotlin
-4  
-5  val Purple80 = Color(0xFFD0BCFF)
-6  val PurpleGrey80 = Color(0xFFCCC2DC)
-7  val Pink80 = Color(0xFFEFB8C8)
-!                     ^ error
-8  
-9  val Purple40 = Color(0xFF6650a4)
-10 val PurpleGrey40 = Color(0xFF625b71)
-
-```
-
-* samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Color.kt:9:22
-```
-This expression contains a magic number. Consider defining it to a well named constant.
-```
-```kotlin
-6  val PurpleGrey80 = Color(0xFFCCC2DC)
-7  val Pink80 = Color(0xFFEFB8C8)
-8  
-9  val Purple40 = Color(0xFF6650a4)
-!                       ^ error
-10 val PurpleGrey40 = Color(0xFF625b71)
-11 val Pink40 = Color(0xFF7D5260)
-12 
-
-```
-
-* samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Color.kt:10:26
-```
-This expression contains a magic number. Consider defining it to a well named constant.
-```
-```kotlin
-7  val Pink80 = Color(0xFFEFB8C8)
-8  
-9  val Purple40 = Color(0xFF6650a4)
-10 val PurpleGrey40 = Color(0xFF625b71)
-!!                          ^ error
-11 val Pink40 = Color(0xFF7D5260)
-12 
-
-```
-
-* samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Color.kt:11:20
-```
-This expression contains a magic number. Consider defining it to a well named constant.
-```
-```kotlin
-8  
-9  val Purple40 = Color(0xFF6650a4)
-10 val PurpleGrey40 = Color(0xFF625b71)
-11 val Pink40 = Color(0xFF7D5260)
-!!                    ^ error
-12 
-
-```
-
 * samples/features/common/main/kotlin/com/javiersc/samples/features/main/MainScreen.kt:41:67
 ```
 This expression contains a magic number. Consider defining it to a well named constant.
@@ -493,4 +402,4 @@ This expression contains a magic number. Consider defining it to a well named co
 
 ```
 
-generated with [detekt version 1.22.0](https://detekt.dev/) on 2023-02-26 22:44:10 UTC
+generated with [detekt version 1.22.0](https://detekt.dev/) on 2023-02-27 00:10:03 UTC
