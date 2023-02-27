@@ -6,37 +6,6 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "Unresolved reference: CharacterEntity",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
-      "language": "kotlin",
-      "line": 25,
-      "offset": 23,
-      "length": 15,
-      "code": {
-        "startLine": 23,
-        "length": 15,
-        "offset": 85,
-        "surroundingCode": "            .asFlow()\n            .mapToList(coroutineContext)\n            .map(List<CharacterEntity>::toCharacters)\n}\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "d66c84baf1f8faea11a3209ebbc37618a229f11b29d8104f4ebf875175f9d406"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
   "comment": "Unresolved reference: KaariDatabase",
   "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
   "sources": [
@@ -99,21 +68,21 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "Unresolved reference: CharacterEntity",
+  "comment": "Unresolved reference: kaari",
   "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
   "sources": [
     {
       "type": "file",
       "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
       "language": "kotlin",
-      "line": 28,
-      "offset": 18,
-      "length": 15,
+      "line": 5,
+      "offset": 21,
+      "length": 5,
       "code": {
-        "startLine": 26,
-        "length": 15,
-        "offset": 20,
-        "surroundingCode": "}\n\nprivate fun List<CharacterEntity>.toCharacters(): List<Character> =\n    map(CharacterEntity::toCharacter)\n"
+        "startLine": 3,
+        "length": 5,
+        "offset": 113,
+        "surroundingCode": "import app.cash.sqldelight.coroutines.asFlow\nimport app.cash.sqldelight.coroutines.mapToList\nimport com.javiersc.kaari.samples.strategies.internal.CharacterEntity\nimport com.javiersc.kaari.samples.strategies.internal.KaariDatabase\nimport kotlin.coroutines.CoroutineContext"
       }
     }
   ],
@@ -121,7 +90,38 @@
     "module": "kaari.samples.strategies.commonMain",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "8dc3802a8ed9f95dd8404282915b5ea217b0acbe0db998eb19ed668e6b8f4e58"
+  "hash": "2c544563fe7838046f13ea9be33af8cb398677170db54474d7cf9aa2790d91e5"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: kaari",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
+      "language": "kotlin",
+      "line": 6,
+      "offset": 21,
+      "length": 5,
+      "code": {
+        "startLine": 4,
+        "length": 5,
+        "offset": 138,
+        "surroundingCode": "import app.cash.sqldelight.coroutines.mapToList\nimport com.javiersc.kaari.samples.strategies.internal.CharacterEntity\nimport com.javiersc.kaari.samples.strategies.internal.KaariDatabase\nimport kotlin.coroutines.CoroutineContext\nimport kotlinx.coroutines.flow.Flow"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "93f261ba61037843d5ba7f6c5d1429f679a04d69ddd876de9b634329ebb4b23f"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -409,37 +409,6 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "Unresolved reference: KaariDatabase",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/AddCharacter.kt",
-      "language": "kotlin",
-      "line": 12,
-      "offset": 27,
-      "length": 13,
-      "code": {
-        "startLine": 10,
-        "length": 13,
-        "offset": 51,
-        "surroundingCode": "\nclass AddCharacterImpl(\n    private val database: KaariDatabase,\n) : AddCharacter {\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "67c1f61a4da812794999aca8004e7ce76c3beeb976b0c94dfe52daf8939fa99b"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
   "comment": "Unresolved reference: kaari",
   "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
   "sources": [
@@ -463,6 +432,37 @@
     "inspectionName": "KotlinAnnotator"
   },
   "hash": "b8e8ccd21cd5445db832cd28bac64740da4f65ef03e06c0b8e836070feb6af80"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: KaariDatabase",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/AddCharacter.kt",
+      "language": "kotlin",
+      "line": 12,
+      "offset": 27,
+      "length": 13,
+      "code": {
+        "startLine": 10,
+        "length": 13,
+        "offset": 51,
+        "surroundingCode": "\nclass AddCharacterImpl(\n    private val database: KaariDatabase,\n) : AddCharacter {\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "67c1f61a4da812794999aca8004e7ce76c3beeb976b0c94dfe52daf8939fa99b"
 },{
   "tool": "Code Inspection",
   "category": "General",
