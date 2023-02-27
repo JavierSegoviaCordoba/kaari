@@ -6,6 +6,37 @@
     "Sanity"
   ],
   "severity": "Critical",
+  "comment": "Unresolved reference: kaari",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/di/strategiesModule.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 21,
+      "length": 5,
+      "code": {
+        "startLine": 1,
+        "length": 5,
+        "offset": 64,
+        "surroundingCode": "package com.javiersc.samples.strategies.di\n\nimport com.javiersc.kaari.samples.strategies.internal.KaariDatabase\nimport com.javiersc.samples.strategies.characters.AddCharacter\nimport com.javiersc.samples.strategies.characters.AddCharacterImpl"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "74023b4939db4c64185b7243262815eb8b10a03782e6f44ee27e04562266b95f"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
   "comment": "Unresolved reference: KaariDatabase",
   "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
   "sources": [
@@ -99,43 +130,12 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "None of the following functions can be called with the arguments supplied: public inline fun Module.singleOf(crossinline constructor: () -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7), TypeVariable(T8)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7), TypeVariable(T8), TypeVariable(T9)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7), TypeVariable(T8), TypeVariable(T9), TypeVariable(T10)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7), TypeVariable(T8), TypeVariable(T9), TypeVariable(T10), TypeVariable(T11)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7), TypeVariable(T8), TypeVariable(T9), TypeVariable(T10), TypeVariable(T11), TypeVariable(T12)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7), TypeVariable(T8), TypeVariable(T9), TypeVariable(T10), TypeVariable(T11), TypeVariable(T12), TypeVariable(T13)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7), TypeVariable(T8), TypeVariable(T9), TypeVariable(T10), TypeVariable(T11), TypeVariable(T12), TypeVariable(T13), TypeVariable(T14)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7), TypeVariable(T8), TypeVariable(T9), TypeVariable(T10), TypeVariable(T11), TypeVariable(T12), TypeVariable(T13), TypeVariable(T14), TypeVariable(T15)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7), TypeVariable(T8), TypeVariable(T9), TypeVariable(T10), TypeVariable(T11), TypeVariable(T12), TypeVariable(T13), TypeVariable(T14), TypeVariable(T15), TypeVariable(T16)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7), TypeVariable(T8), TypeVariable(T9), TypeVariable(T10), TypeVariable(T11), TypeVariable(T12), TypeVariable(T13), TypeVariable(T14), TypeVariable(T15), TypeVariable(T16), TypeVariable(T17)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7), TypeVariable(T8), TypeVariable(T9), TypeVariable(T10), TypeVariable(T11), TypeVariable(T12), TypeVariable(T13), TypeVariable(T14), TypeVariable(T15), TypeVariable(T16), TypeVariable(T17), TypeVariable(T18)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7), TypeVariable(T8), TypeVariable(T9), TypeVariable(T10), TypeVariable(T11), TypeVariable(T12), TypeVariable(T13), TypeVariable(T14), TypeVariable(T15), TypeVariable(T16), TypeVariable(T17), TypeVariable(T18), TypeVariable(T19)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7), TypeVariable(T8), TypeVariable(T9), TypeVariable(T10), TypeVariable(T11), TypeVariable(T12), TypeVariable(T13), TypeVariable(T14), TypeVariable(T15), TypeVariable(T16), TypeVariable(T17), TypeVariable(T18), TypeVariable(T19), TypeVariable(T20)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7), TypeVariable(T8), TypeVariable(T9), TypeVariable(T10), TypeVariable(T11), TypeVariable(T12), TypeVariable(T13), TypeVariable(T14), TypeVariable(T15), TypeVariable(T16), TypeVariable(T17), TypeVariable(T18), TypeVariable(T19), TypeVariable(T20), TypeVariable(T21)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl public inline fun Module.singleOf(crossinline constructor: (TypeVariable(T1), TypeVariable(T2), TypeVariable(T3), TypeVariable(T4), TypeVariable(T5), TypeVariable(T6), TypeVariable(T7), TypeVariable(T8), TypeVariable(T9), TypeVariable(T10), TypeVariable(T11), TypeVariable(T12), TypeVariable(T13), TypeVariable(T14), TypeVariable(T15), TypeVariable(T16), TypeVariable(T17), TypeVariable(T18), TypeVariable(T19), TypeVariable(T20), TypeVariable(T21), TypeVariable(T22)) -> TypeVariable(R), noinline options: DefinitionOptions? /* = (BeanDefinition.() -> Unit)? */ = ...): KoinDefinition defined in org.koin.core.module.dsl",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/di/strategiesModule.kt",
-      "language": "kotlin",
-      "line": 16,
-      "offset": 5,
-      "length": 8,
-      "code": {
-        "startLine": 14,
-        "length": 8,
-        "offset": 94,
-        "surroundingCode": "    single { KaariDatabase.Schema }\n    singleOf(::AddCharacterImpl).bind<AddCharacter>()\n    singleOf(::GetCharactersImpl).bind<GetCharacters>()\n}\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "6e55556e1e201fb779573e85f443017dd9a4d333b8ab53cf90f18d388ed7a183"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
   "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
   "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
   "sources": [
     {
       "type": "file",
-      "path": "samples/features/build.gradle.kts",
+      "path": "samples/apps/android/build.gradle.kts",
       "language": "kotlin",
       "line": 2,
       "offset": 11,
@@ -149,72 +149,10 @@
     }
   ],
   "attributes": {
-    "module": "kaari.samples.features",
+    "module": "kaari.samples.apps.android",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "0e368d09c7af8290105cdb1b0324519ed0dbd953ac07f21d4aa3db8d74884d1e"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Unresolved reference: kaari",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/AddCharacter.kt",
-      "language": "kotlin",
-      "line": 3,
-      "offset": 21,
-      "length": 5,
-      "code": {
-        "startLine": 1,
-        "length": 5,
-        "offset": 72,
-        "surroundingCode": "package com.javiersc.samples.strategies.characters\n\nimport com.javiersc.kaari.samples.strategies.internal.KaariDatabase\nimport kotlin.time.Duration.Companion.milliseconds\nimport kotlinx.coroutines.delay"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "b8e8ccd21cd5445db832cd28bac64740da4f65ef03e06c0b8e836070feb6af80"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Unresolved reference: KaariDatabase",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/AddCharacter.kt",
-      "language": "kotlin",
-      "line": 12,
-      "offset": 27,
-      "length": 13,
-      "code": {
-        "startLine": 10,
-        "length": 13,
-        "offset": 51,
-        "surroundingCode": "\nclass AddCharacterImpl(\n    private val database: KaariDatabase,\n) : AddCharacter {\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "67c1f61a4da812794999aca8004e7ce76c3beeb976b0c94dfe52daf8939fa99b"
+  "hash": "3af086950e7dceea29fdeef0d16924197d3397e4a90575cd13b35c8ed0611407"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -228,7 +166,7 @@
   "sources": [
     {
       "type": "file",
-      "path": "kaari-presenter/build.gradle.kts",
+      "path": "kaari-viewmodel/build.gradle.kts",
       "language": "kotlin",
       "line": 2,
       "offset": 11,
@@ -242,10 +180,10 @@
     }
   ],
   "attributes": {
-    "module": "kaari.kaari-presenter",
+    "module": "kaari.kaari-viewmodel",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "17be6d3e33fbfec59d220454beb3f55b5699d239812385b1c30fb82b363cee76"
+  "hash": "16715dac3b8101ba5f62dfdc9a59bc553ba61ce857bbf3da89f6cd05deb0e6e5"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -290,7 +228,7 @@
   "sources": [
     {
       "type": "file",
-      "path": "build.gradle.kts",
+      "path": "kaari-presenter/build.gradle.kts",
       "language": "kotlin",
       "line": 2,
       "offset": 11,
@@ -304,165 +242,10 @@
     }
   ],
   "attributes": {
-    "module": "kaari",
+    "module": "kaari.kaari-presenter",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "fe39e7f70a2193bb299a234af0763dbbc6fac39a3f375deb2281e451a809adf4"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Unresolved reference: CharacterEntity",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
-      "language": "kotlin",
-      "line": 28,
-      "offset": 18,
-      "length": 15,
-      "code": {
-        "startLine": 26,
-        "length": 15,
-        "offset": 20,
-        "surroundingCode": "}\n\nprivate fun List<CharacterEntity>.toCharacters(): List<Character> =\n    map(CharacterEntity::toCharacter)\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "8dc3802a8ed9f95dd8404282915b5ea217b0acbe0db998eb19ed668e6b8f4e58"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Unresolved reference: CharacterEntity",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
-      "language": "kotlin",
-      "line": 29,
-      "offset": 9,
-      "length": 15,
-      "code": {
-        "startLine": 27,
-        "length": 15,
-        "offset": 77,
-        "surroundingCode": "\nprivate fun List<CharacterEntity>.toCharacters(): List<Character> =\n    map(CharacterEntity::toCharacter)\n\nprivate fun CharacterEntity.toCharacter(): Character = Character(id, name)"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "d114fcc82549fecdd1959678bb8216cec24bdcf39f533973901aa06f33a17d51"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Unresolved reference: CharacterEntity",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
-      "language": "kotlin",
-      "line": 25,
-      "offset": 23,
-      "length": 15,
-      "code": {
-        "startLine": 23,
-        "length": 15,
-        "offset": 85,
-        "surroundingCode": "            .asFlow()\n            .mapToList(coroutineContext)\n            .map(List<CharacterEntity>::toCharacters)\n}\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "d66c84baf1f8faea11a3209ebbc37618a229f11b29d8104f4ebf875175f9d406"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Unresolved reference: CharacterEntity",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
-      "language": "kotlin",
-      "line": 31,
-      "offset": 13,
-      "length": 15,
-      "code": {
-        "startLine": 29,
-        "length": 15,
-        "offset": 51,
-        "surroundingCode": "    map(CharacterEntity::toCharacter)\n\nprivate fun CharacterEntity.toCharacter(): Character = Character(id, name)\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "1a3bf4f414c5d3e583924b65bb53ba90be2b462a0f05db06e0f2cdd81589c615"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/apps/android/build.gradle.kts",
-      "language": "kotlin",
-      "line": 2,
-      "offset": 11,
-      "length": 4,
-      "code": {
-        "startLine": 1,
-        "length": 4,
-        "offset": 20,
-        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.apps.android",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "3af086950e7dceea29fdeef0d16924197d3397e4a90575cd13b35c8ed0611407"
+  "hash": "17be6d3e33fbfec59d220454beb3f55b5699d239812385b1c30fb82b363cee76"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -507,7 +290,7 @@
   "sources": [
     {
       "type": "file",
-      "path": "kaari-viewmodel/build.gradle.kts",
+      "path": "build.gradle.kts",
       "language": "kotlin",
       "line": 2,
       "offset": 11,
@@ -521,8 +304,225 @@
     }
   ],
   "attributes": {
-    "module": "kaari.kaari-viewmodel",
+    "module": "kaari",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "16715dac3b8101ba5f62dfdc9a59bc553ba61ce857bbf3da89f6cd05deb0e6e5"
+  "hash": "fe39e7f70a2193bb299a234af0763dbbc6fac39a3f375deb2281e451a809adf4"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/features/build.gradle.kts",
+      "language": "kotlin",
+      "line": 2,
+      "offset": 11,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 20,
+        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.features",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "0e368d09c7af8290105cdb1b0324519ed0dbd953ac07f21d4aa3db8d74884d1e"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: KaariDatabase",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/AddCharacter.kt",
+      "language": "kotlin",
+      "line": 12,
+      "offset": 27,
+      "length": 13,
+      "code": {
+        "startLine": 10,
+        "length": 13,
+        "offset": 51,
+        "surroundingCode": "\nclass AddCharacterImpl(\n    private val database: KaariDatabase,\n) : AddCharacter {\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "67c1f61a4da812794999aca8004e7ce76c3beeb976b0c94dfe52daf8939fa99b"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: kaari",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/AddCharacter.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 21,
+      "length": 5,
+      "code": {
+        "startLine": 1,
+        "length": 5,
+        "offset": 72,
+        "surroundingCode": "package com.javiersc.samples.strategies.characters\n\nimport com.javiersc.kaari.samples.strategies.internal.KaariDatabase\nimport kotlin.time.Duration.Companion.milliseconds\nimport kotlinx.coroutines.delay"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "b8e8ccd21cd5445db832cd28bac64740da4f65ef03e06c0b8e836070feb6af80"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: CharacterEntity",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
+      "language": "kotlin",
+      "line": 25,
+      "offset": 23,
+      "length": 15,
+      "code": {
+        "startLine": 23,
+        "length": 15,
+        "offset": 85,
+        "surroundingCode": "            .asFlow()\n            .mapToList(coroutineContext)\n            .map(List<CharacterEntity>::toCharacters)\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "d66c84baf1f8faea11a3209ebbc37618a229f11b29d8104f4ebf875175f9d406"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: kaari",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 21,
+      "length": 5,
+      "code": {
+        "startLine": 3,
+        "length": 5,
+        "offset": 113,
+        "surroundingCode": "import app.cash.sqldelight.coroutines.asFlow\nimport app.cash.sqldelight.coroutines.mapToList\nimport com.javiersc.kaari.samples.strategies.internal.CharacterEntity\nimport com.javiersc.kaari.samples.strategies.internal.KaariDatabase\nimport kotlin.coroutines.CoroutineContext"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "2c544563fe7838046f13ea9be33af8cb398677170db54474d7cf9aa2790d91e5"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: kaari",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
+      "language": "kotlin",
+      "line": 6,
+      "offset": 21,
+      "length": 5,
+      "code": {
+        "startLine": 4,
+        "length": 5,
+        "offset": 138,
+        "surroundingCode": "import app.cash.sqldelight.coroutines.mapToList\nimport com.javiersc.kaari.samples.strategies.internal.CharacterEntity\nimport com.javiersc.kaari.samples.strategies.internal.KaariDatabase\nimport kotlin.coroutines.CoroutineContext\nimport kotlinx.coroutines.flow.Flow"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "93f261ba61037843d5ba7f6c5d1429f679a04d69ddd876de9b634329ebb4b23f"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: CharacterEntity",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
+      "language": "kotlin",
+      "line": 28,
+      "offset": 18,
+      "length": 15,
+      "code": {
+        "startLine": 26,
+        "length": 15,
+        "offset": 20,
+        "surroundingCode": "}\n\nprivate fun List<CharacterEntity>.toCharacters(): List<Character> =\n    map(CharacterEntity::toCharacter)\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "8dc3802a8ed9f95dd8404282915b5ea217b0acbe0db998eb19ed668e6b8f4e58"
 }]}

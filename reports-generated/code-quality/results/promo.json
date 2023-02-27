@@ -1,51 +1,23 @@
 {"version":"3","listProblem":[{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
-  "type": "Unused receiver parameter",
-  "severity": "High",
-  "comment": "Receiver parameter is never used",
-  "detailsInfo": "Reports receiver parameter of extension functions and properties that is not used.\n\n**Remove redundant receiver parameter** can be used to amend the code automatically.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
-      "language": "kotlin",
-      "line": 31,
-      "offset": 13,
-      "length": 15,
-      "code": {
-        "startLine": 29,
-        "length": 15,
-        "offset": 51,
-        "surroundingCode": "    map(CharacterEntity::toCharacter)\n\nprivate fun CharacterEntity.toCharacter(): Character = Character(id, name)\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "UnusedReceiverParameter"
-  },
-  "hash": "81920bde59bd4484d2a866a31e5392bafb9d22007fa6fed7bddfed4de5be0342"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
   "type": "Unused symbol",
   "severity": "High",
-  "comment": "Property \"presentationModule\" is never used",
+  "comment": "Property \"DarkColorScheme\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
       "type": "file",
-      "path": "samples/features/common/main/kotlin/com/javiersc/samples/features/_di/presentationModule.kt",
+      "path": "samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Theme.kt",
       "language": "kotlin",
-      "line": 7,
-      "offset": 5,
-      "length": 18,
+      "line": 10,
+      "offset": 14,
+      "length": 15,
       "code": {
-        "startLine": 5,
-        "length": 18,
-        "offset": 32,
-        "surroundingCode": "import org.koin.dsl.module\n\nval presentationModule = module { singleOf(::MainViewModel) }\n"
+        "startLine": 8,
+        "length": 15,
+        "offset": 57,
+        "surroundingCode": "import androidx.compose.runtime.Composable\n\ninternal val DarkColorScheme =\n    darkColorScheme(primary = Purple80, secondary = PurpleGrey80, tertiary = Pink80)\n"
       }
     }
   ],
@@ -53,5 +25,33 @@
     "module": "kaari.samples.features.commonMain",
     "inspectionName": "UnusedSymbol"
   },
-  "hash": "44d45eca0fa92ca80c3de65721b4a0ccfb1d366bb07cecb11d4497b5daed7ed8"
+  "hash": "46dae2f0f269d104f4aadd8835fcb06950898d71791cb5e8304badd73b331bf0"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "severity": "High",
+  "comment": "Function \"ComposePlaygroundTheme\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Theme.kt",
+      "language": "kotlin",
+      "line": 31,
+      "offset": 5,
+      "length": 22,
+      "code": {
+        "startLine": 29,
+        "length": 22,
+        "offset": 17,
+        "surroundingCode": "\n@Composable\nfun ComposePlaygroundTheme(\n    isDarkTheme: Boolean = isSystemInDarkTheme(),\n    // Dynamic color is available on Android 12+"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.features.commonMain",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "488026afcfd7ce5999a33453c0b1c0667dcd56f0c1a3805358a604e7f6a641f5"
 }]}
