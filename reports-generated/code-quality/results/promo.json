@@ -1,57 +1,57 @@
 {"version":"3","listProblem":[{
   "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "severity": "High",
-  "comment": "Property \"DarkColorScheme\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "category": "Naming conventions",
+  "type": "Function naming convention",
+  "severity": "Moderate",
+  "comment": "Function name 'Character' should start with a lowercase letter",
+  "detailsInfo": "Reports function names that do not follow the recommended naming conventions.\n\n**Example:**\n\n\n      fun Foo() {}\n\nTo fix the problem change the name of the function to match the recommended naming conventions.",
   "sources": [
     {
       "type": "file",
-      "path": "samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Theme.kt",
+      "path": "samples/features/common/main/kotlin/com/javiersc/samples/features/main/MainScreen.kt",
       "language": "kotlin",
-      "line": 10,
-      "offset": 14,
-      "length": 15,
+      "line": 60,
+      "offset": 5,
+      "length": 9,
       "code": {
-        "startLine": 8,
-        "length": 15,
-        "offset": 57,
-        "surroundingCode": "import androidx.compose.runtime.Composable\n\ninternal val DarkColorScheme =\n    darkColorScheme(primary = Purple80, secondary = PurpleGrey80, tertiary = Pink80)\n"
+        "startLine": 58,
+        "length": 9,
+        "offset": 17,
+        "surroundingCode": "\n@Composable\nfun Character(name: String) {\n    Text(name)\n}"
       }
     }
   ],
   "attributes": {
     "module": "kaari.samples.features.commonMain",
-    "inspectionName": "UnusedSymbol"
+    "inspectionName": "FunctionName"
   },
-  "hash": "46dae2f0f269d104f4aadd8835fcb06950898d71791cb5e8304badd73b331bf0"
+  "hash": "268d813c2e36a015c1358d91caf530fbbe35fb10ad159d0917edc31c2ab2e5be"
 },{
   "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "severity": "High",
-  "comment": "Function \"ComposePlaygroundTheme\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "category": "Naming conventions",
+  "type": "Function naming convention",
+  "severity": "Moderate",
+  "comment": "Function name 'MainScreen' should start with a lowercase letter",
+  "detailsInfo": "Reports function names that do not follow the recommended naming conventions.\n\n**Example:**\n\n\n      fun Foo() {}\n\nTo fix the problem change the name of the function to match the recommended naming conventions.",
   "sources": [
     {
       "type": "file",
-      "path": "samples/features/common/main/kotlin/com/javiersc/samples/features/_theme/Theme.kt",
+      "path": "samples/features/common/main/kotlin/com/javiersc/samples/features/main/MainScreen.kt",
       "language": "kotlin",
-      "line": 31,
+      "line": 18,
       "offset": 5,
-      "length": 22,
+      "length": 10,
       "code": {
-        "startLine": 29,
-        "length": 22,
+        "startLine": 16,
+        "length": 10,
         "offset": 17,
-        "surroundingCode": "\n@Composable\nfun ComposePlaygroundTheme(\n    isDarkTheme: Boolean = isSystemInDarkTheme(),\n    // Dynamic color is available on Android 12+"
+        "surroundingCode": "\n@Composable\nfun MainScreen(\n    state: MainState,\n    onAddCharacter: (Character) -> Unit = {},"
       }
     }
   ],
   "attributes": {
     "module": "kaari.samples.features.commonMain",
-    "inspectionName": "UnusedSymbol"
+    "inspectionName": "FunctionName"
   },
-  "hash": "488026afcfd7ce5999a33453c0b1c0667dcd56f0c1a3805358a604e7f6a641f5"
+  "hash": "914fbd4fa30f18603030f5d2d176e2cf460f0c5d668def9cba12dc4662b1b554"
 }]}
