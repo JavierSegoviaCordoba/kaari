@@ -14,11 +14,11 @@
 
 ## Complexity Report
 
-* 1,085 lines of code (loc)
+* 1,095 lines of code (loc)
 
-* 907 source lines of code (sloc)
+* 917 source lines of code (sloc)
 
-* 537 logical lines of code (lloc)
+* 544 logical lines of code (lloc)
 
 * 31 comment lines of code (cloc)
 
@@ -30,7 +30,7 @@
 
 * 3% comment source ratio
 
-* 87 mcc per 1,000 lloc
+* 86 mcc per 1,000 lloc
 
 * 40 code smells per 1,000 lloc
 
@@ -402,4 +402,4 @@ This expression contains a magic number. Consider defining it to a well named co
 
 ```
 
-generated with [detekt version 1.22.0](https://detekt.dev/) on 2023-02-27 00:49:19 UTC
+generated with [detekt version 1.22.0](https://detekt.dev/) on 2023-03-04 20:45:28 UTC

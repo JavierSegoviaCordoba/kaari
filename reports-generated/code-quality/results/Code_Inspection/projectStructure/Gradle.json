@@ -42,20 +42,20 @@
       "version": "2.0.0-alpha05"
     },
     {
-      "ideaName": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.3",
-      "gradleName": "io.ktor:ktor-client-okhttp-jvm:2.2.3",
+      "ideaName": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.4",
+      "gradleName": "io.ktor:ktor-client-okhttp-jvm:2.2.4",
       "unresolved": false,
       "groupId": "io.ktor",
       "artifactId": "ktor-client-okhttp-jvm",
-      "version": "2.2.3"
+      "version": "2.2.4"
     },
     {
-      "ideaName": "Gradle: io.ktor:ktor-client-core-jvm:2.2.3",
-      "gradleName": "io.ktor:ktor-client-core-jvm:2.2.3",
+      "ideaName": "Gradle: io.ktor:ktor-client-core-jvm:2.2.4",
+      "gradleName": "io.ktor:ktor-client-core-jvm:2.2.4",
       "unresolved": false,
       "groupId": "io.ktor",
       "artifactId": "ktor-client-core-jvm",
-      "version": "2.2.3"
+      "version": "2.2.4"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4",
@@ -146,28 +146,28 @@
       "version": "13.0"
     },
     {
-      "ideaName": "Gradle: io.ktor:ktor-events-jvm:2.2.3",
-      "gradleName": "io.ktor:ktor-events-jvm:2.2.3",
+      "ideaName": "Gradle: io.ktor:ktor-events-jvm:2.2.4",
+      "gradleName": "io.ktor:ktor-events-jvm:2.2.4",
       "unresolved": false,
       "groupId": "io.ktor",
       "artifactId": "ktor-events-jvm",
-      "version": "2.2.3"
+      "version": "2.2.4"
     },
     {
-      "ideaName": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.3",
-      "gradleName": "io.ktor:ktor-websocket-serialization-jvm:2.2.3",
+      "ideaName": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.4",
+      "gradleName": "io.ktor:ktor-websocket-serialization-jvm:2.2.4",
       "unresolved": false,
       "groupId": "io.ktor",
       "artifactId": "ktor-websocket-serialization-jvm",
-      "version": "2.2.3"
+      "version": "2.2.4"
     },
     {
-      "ideaName": "Gradle: io.ktor:ktor-http-jvm:2.2.3",
-      "gradleName": "io.ktor:ktor-http-jvm:2.2.3",
+      "ideaName": "Gradle: io.ktor:ktor-http-jvm:2.2.4",
+      "gradleName": "io.ktor:ktor-http-jvm:2.2.4",
       "unresolved": false,
       "groupId": "io.ktor",
       "artifactId": "ktor-http-jvm",
-      "version": "2.2.3"
+      "version": "2.2.4"
     },
     {
       "ideaName": "Gradle: com.squareup.okio:okio-jvm:3.0.0",
@@ -178,36 +178,36 @@
       "version": "3.0.0"
     },
     {
-      "ideaName": "Gradle: io.ktor:ktor-utils-jvm:2.2.3",
-      "gradleName": "io.ktor:ktor-utils-jvm:2.2.3",
+      "ideaName": "Gradle: io.ktor:ktor-utils-jvm:2.2.4",
+      "gradleName": "io.ktor:ktor-utils-jvm:2.2.4",
       "unresolved": false,
       "groupId": "io.ktor",
       "artifactId": "ktor-utils-jvm",
-      "version": "2.2.3"
+      "version": "2.2.4"
     },
     {
-      "ideaName": "Gradle: io.ktor:ktor-serialization-jvm:2.2.3",
-      "gradleName": "io.ktor:ktor-serialization-jvm:2.2.3",
+      "ideaName": "Gradle: io.ktor:ktor-serialization-jvm:2.2.4",
+      "gradleName": "io.ktor:ktor-serialization-jvm:2.2.4",
       "unresolved": false,
       "groupId": "io.ktor",
       "artifactId": "ktor-serialization-jvm",
-      "version": "2.2.3"
+      "version": "2.2.4"
     },
     {
-      "ideaName": "Gradle: io.ktor:ktor-io-jvm:2.2.3",
-      "gradleName": "io.ktor:ktor-io-jvm:2.2.3",
+      "ideaName": "Gradle: io.ktor:ktor-io-jvm:2.2.4",
+      "gradleName": "io.ktor:ktor-io-jvm:2.2.4",
       "unresolved": false,
       "groupId": "io.ktor",
       "artifactId": "ktor-io-jvm",
-      "version": "2.2.3"
+      "version": "2.2.4"
     },
     {
-      "ideaName": "Gradle: io.ktor:ktor-websockets-jvm:2.2.3",
-      "gradleName": "io.ktor:ktor-websockets-jvm:2.2.3",
+      "ideaName": "Gradle: io.ktor:ktor-websockets-jvm:2.2.4",
+      "gradleName": "io.ktor:ktor-websockets-jvm:2.2.4",
       "unresolved": false,
       "groupId": "io.ktor",
       "artifactId": "ktor-websockets-jvm",
-      "version": "2.2.3"
+      "version": "2.2.4"
     },
     {
       "ideaName": "Gradle: org.xerial:sqlite-jdbc:3.40.0.0",

@@ -1,1 +1,57 @@
-{"version":"3","listProblem":[]}
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "severity": "High",
+  "comment": "Property \"presentationModule\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/features/common/main/kotlin/com/javiersc/samples/features/_di/presentationModule.kt",
+      "language": "kotlin",
+      "line": 7,
+      "offset": 5,
+      "length": 18,
+      "code": {
+        "startLine": 5,
+        "length": 18,
+        "offset": 32,
+        "surroundingCode": "import org.koin.dsl.module\n\nval presentationModule = module { singleOf(::MainViewModel) }\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.features.commonMain",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "44d45eca0fa92ca80c3de65721b4a0ccfb1d366bb07cecb11d4497b5daed7ed8"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "severity": "High",
+  "comment": "Function \"MainScreen\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/features/common/main/kotlin/com/javiersc/samples/features/main/MainScreen.kt",
+      "language": "kotlin",
+      "line": 18,
+      "offset": 5,
+      "length": 10,
+      "code": {
+        "startLine": 16,
+        "length": 10,
+        "offset": 17,
+        "surroundingCode": "\n@Composable\nfun MainScreen(\n    state: MainState,\n    onAddCharacter: (Character) -> Unit = {},"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.features.commonMain",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "f0497e2687dc2eb0cdfdb84f21d457fb63d8510ecc5c67227720228595820e3d"
+}]}

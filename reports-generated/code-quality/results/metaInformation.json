@@ -8,12 +8,12 @@
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/JavierSegoviaCordoba/kaari.git",
-        "revisionId": "33e5658c4777c45e8fdf23e202926a025c303e1b",
+        "revisionId": "cc0a3166e5e8f4d1599818261dd29df34b08eafd",
         "branch": "main"
       }
     },
     "deviceId": "200820300000000-fd2a-4eae-1aff-75a3666fbf05",
-    "jobUrl": "https://github.com/JavierSegoviaCordoba/kaari/actions/runs/4277911545",
+    "jobUrl": "https://github.com/JavierSegoviaCordoba/kaari/actions/runs/4332773097",
     "repoUrl": "https://github.com/JavierSegoviaCordoba/kaari.git"
   }
 }

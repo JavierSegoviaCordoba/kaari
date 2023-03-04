@@ -1815,7 +1815,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -1823,7 +1823,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -1923,15 +1923,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -1939,19 +1939,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.4",
           "type": "Library"
         }
       ]
@@ -2118,7 +2118,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -2126,7 +2126,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -2242,15 +2242,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -2266,19 +2266,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.4",
           "type": "Library"
         }
       ]
@@ -2459,7 +2459,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -2467,7 +2467,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -2567,15 +2567,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -2583,19 +2583,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.4",
           "type": "Library"
         }
       ]
@@ -2766,7 +2766,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -2774,7 +2774,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -2858,15 +2858,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -2882,19 +2882,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.4",
           "type": "Library"
         }
       ]
@@ -2951,11 +2951,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3003,7 +3003,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3011,7 +3011,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3019,7 +3019,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3027,19 +3027,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.4",
           "type": "Library"
         }
       ]
@@ -3110,11 +3110,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3182,7 +3182,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3190,7 +3190,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3198,7 +3198,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3214,11 +3214,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3226,7 +3226,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3234,7 +3234,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3375,11 +3375,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3427,7 +3427,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3435,7 +3435,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3443,7 +3443,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3451,19 +3451,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.4",
           "type": "Library"
         }
       ]
@@ -3526,11 +3526,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-okhttp-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-client-core-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3594,7 +3594,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-events-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3602,11 +3602,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websocket-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-http-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3614,15 +3614,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-utils-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-serialization-jvm:2.2.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-io-jvm:2.2.4",
           "type": "Library"
         },
         {
@@ -3630,7 +3630,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.3",
+          "name": "Gradle: io.ktor:ktor-websockets-jvm:2.2.4",
           "type": "Library"
         },
         {
