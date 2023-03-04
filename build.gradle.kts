@@ -16,6 +16,7 @@ hubdle {
         }
         coverage()
         documentation {
+            api()
             changelog()
             readme {
                 badges()
