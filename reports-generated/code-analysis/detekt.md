@@ -402,4 +402,4 @@ This expression contains a magic number. Consider defining it to a well named co
 
 ```
 
-generated with [detekt version 1.22.0](https://detekt.dev/) on 2023-03-04 20:45:28 UTC
+generated with [detekt version 1.22.0](https://detekt.dev/) on 2023-03-05 09:07:27 UTC

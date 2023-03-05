@@ -11,347 +11,6 @@
   "sources": [
     {
       "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/AddCharacter.kt",
-      "language": "kotlin",
-      "line": 3,
-      "offset": 21,
-      "length": 5,
-      "code": {
-        "startLine": 1,
-        "length": 5,
-        "offset": 72,
-        "surroundingCode": "package com.javiersc.samples.strategies.characters\n\nimport com.javiersc.kaari.samples.strategies.internal.KaariDatabase\nimport kotlin.time.Duration.Companion.milliseconds\nimport kotlinx.coroutines.delay"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "b8e8ccd21cd5445db832cd28bac64740da4f65ef03e06c0b8e836070feb6af80"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Unresolved reference: KaariDatabase",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/AddCharacter.kt",
-      "language": "kotlin",
-      "line": 12,
-      "offset": 27,
-      "length": 13,
-      "code": {
-        "startLine": 10,
-        "length": 13,
-        "offset": 51,
-        "surroundingCode": "\nclass AddCharacterImpl(\n    private val database: KaariDatabase,\n) : AddCharacter {\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "67c1f61a4da812794999aca8004e7ce76c3beeb976b0c94dfe52daf8939fa99b"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kaari-presentation-core/build.gradle.kts",
-      "language": "kotlin",
-      "line": 2,
-      "offset": 11,
-      "length": 4,
-      "code": {
-        "startLine": 1,
-        "length": 4,
-        "offset": 20,
-        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.kaari-presentation-core",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "1e3638a8843aeb38213cdc864c712392718626eed6beb88cdd05deeb7879f700"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Unresolved reference: CharacterEntity",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
-      "language": "kotlin",
-      "line": 25,
-      "offset": 23,
-      "length": 15,
-      "code": {
-        "startLine": 23,
-        "length": 15,
-        "offset": 85,
-        "surroundingCode": "            .asFlow()\n            .mapToList(coroutineContext)\n            .map(List<CharacterEntity>::toCharacters)\n}\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "d66c84baf1f8faea11a3209ebbc37618a229f11b29d8104f4ebf875175f9d406"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Unresolved reference: CharacterEntity",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
-      "language": "kotlin",
-      "line": 28,
-      "offset": 18,
-      "length": 15,
-      "code": {
-        "startLine": 26,
-        "length": 15,
-        "offset": 20,
-        "surroundingCode": "}\n\nprivate fun List<CharacterEntity>.toCharacters(): List<Character> =\n    map(CharacterEntity::toCharacter)\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "8dc3802a8ed9f95dd8404282915b5ea217b0acbe0db998eb19ed668e6b8f4e58"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Unresolved reference: CharacterEntity",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
-      "language": "kotlin",
-      "line": 29,
-      "offset": 9,
-      "length": 15,
-      "code": {
-        "startLine": 27,
-        "length": 15,
-        "offset": 77,
-        "surroundingCode": "\nprivate fun List<CharacterEntity>.toCharacters(): List<Character> =\n    map(CharacterEntity::toCharacter)\n\nprivate fun CharacterEntity.toCharacter(): Character = Character(id, name)"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "d114fcc82549fecdd1959678bb8216cec24bdcf39f533973901aa06f33a17d51"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Unresolved reference: KaariDatabase",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
-      "language": "kotlin",
-      "line": 17,
-      "offset": 27,
-      "length": 13,
-      "code": {
-        "startLine": 15,
-        "length": 13,
-        "offset": 103,
-        "surroundingCode": "class GetCharactersImpl(\n    private val coroutineContext: CoroutineContext,\n    private val database: KaariDatabase,\n) : GetCharacters {\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies.commonMain",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "52c3763e43a79e99ebac015077ade3e8e7a7aee9f7b4d25484e7cf3c456d560c"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/features/build.gradle.kts",
-      "language": "kotlin",
-      "line": 2,
-      "offset": 11,
-      "length": 4,
-      "code": {
-        "startLine": 1,
-        "length": 4,
-        "offset": 20,
-        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.features",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "0e368d09c7af8290105cdb1b0324519ed0dbd953ac07f21d4aa3db8d74884d1e"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "build.gradle.kts",
-      "language": "kotlin",
-      "line": 2,
-      "offset": 11,
-      "length": 4,
-      "code": {
-        "startLine": 1,
-        "length": 4,
-        "offset": 20,
-        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "fe39e7f70a2193bb299a234af0763dbbc6fac39a3f375deb2281e451a809adf4"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kaari-viewmodel/build.gradle.kts",
-      "language": "kotlin",
-      "line": 2,
-      "offset": 11,
-      "length": 4,
-      "code": {
-        "startLine": 1,
-        "length": 4,
-        "offset": 20,
-        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.kaari-viewmodel",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "16715dac3b8101ba5f62dfdc9a59bc553ba61ce857bbf3da89f6cd05deb0e6e5"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "samples/strategies/build.gradle.kts",
-      "language": "kotlin",
-      "line": 1,
-      "offset": 17,
-      "length": 4,
-      "code": {
-        "startLine": 1,
-        "length": 4,
-        "offset": 16,
-        "surroundingCode": "plugins { alias(libs.plugins.javiersc.hubdle) }\n\nhubdle {"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kaari.samples.strategies",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "b1713651033c6c1abd1b3caf2263fb09ad2e6c623aa2f8993295082fc4e6de90"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Unresolved reference: kaari",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
       "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/di/strategiesModule.kt",
       "language": "kotlin",
       "line": 3,
@@ -476,6 +135,37 @@
   "sources": [
     {
       "type": "file",
+      "path": "samples/features/build.gradle.kts",
+      "language": "kotlin",
+      "line": 2,
+      "offset": 11,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 20,
+        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.features",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "0e368d09c7af8290105cdb1b0324519ed0dbd953ac07f21d4aa3db8d74884d1e"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
       "path": "kaari-presenter/build.gradle.kts",
       "language": "kotlin",
       "line": 2,
@@ -507,6 +197,130 @@
   "sources": [
     {
       "type": "file",
+      "path": "kaari-presentation-core/build.gradle.kts",
+      "language": "kotlin",
+      "line": 2,
+      "offset": 11,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 20,
+        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.kaari-presentation-core",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "1e3638a8843aeb38213cdc864c712392718626eed6beb88cdd05deeb7879f700"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: KaariDatabase",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/AddCharacter.kt",
+      "language": "kotlin",
+      "line": 12,
+      "offset": 27,
+      "length": 13,
+      "code": {
+        "startLine": 10,
+        "length": 13,
+        "offset": 51,
+        "surroundingCode": "\nclass AddCharacterImpl(\n    private val database: KaariDatabase,\n) : AddCharacter {\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "67c1f61a4da812794999aca8004e7ce76c3beeb976b0c94dfe52daf8939fa99b"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: kaari",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/AddCharacter.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 21,
+      "length": 5,
+      "code": {
+        "startLine": 1,
+        "length": 5,
+        "offset": 72,
+        "surroundingCode": "package com.javiersc.samples.strategies.characters\n\nimport com.javiersc.kaari.samples.strategies.internal.KaariDatabase\nimport kotlin.time.Duration.Companion.milliseconds\nimport kotlinx.coroutines.delay"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "b8e8ccd21cd5445db832cd28bac64740da4f65ef03e06c0b8e836070feb6af80"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "build.gradle.kts",
+      "language": "kotlin",
+      "line": 2,
+      "offset": 11,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 20,
+        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "fe39e7f70a2193bb299a234af0763dbbc6fac39a3f375deb2281e451a809adf4"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
       "path": "samples/apps/android/build.gradle.kts",
       "language": "kotlin",
       "line": 2,
@@ -525,4 +339,190 @@
     "inspectionName": "KotlinAnnotator"
   },
   "hash": "3af086950e7dceea29fdeef0d16924197d3397e4a90575cd13b35c8ed0611407"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kaari-viewmodel/build.gradle.kts",
+      "language": "kotlin",
+      "line": 2,
+      "offset": 11,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 20,
+        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.kaari-viewmodel",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "16715dac3b8101ba5f62dfdc9a59bc553ba61ce857bbf3da89f6cd05deb0e6e5"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: CharacterEntity",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
+      "language": "kotlin",
+      "line": 28,
+      "offset": 18,
+      "length": 15,
+      "code": {
+        "startLine": 26,
+        "length": 15,
+        "offset": 20,
+        "surroundingCode": "}\n\nprivate fun List<CharacterEntity>.toCharacters(): List<Character> =\n    map(CharacterEntity::toCharacter)\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "8dc3802a8ed9f95dd8404282915b5ea217b0acbe0db998eb19ed668e6b8f4e58"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: CharacterEntity",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
+      "language": "kotlin",
+      "line": 29,
+      "offset": 9,
+      "length": 15,
+      "code": {
+        "startLine": 27,
+        "length": 15,
+        "offset": 77,
+        "surroundingCode": "\nprivate fun List<CharacterEntity>.toCharacters(): List<Character> =\n    map(CharacterEntity::toCharacter)\n\nprivate fun CharacterEntity.toCharacter(): Character = Character(id, name)"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "d114fcc82549fecdd1959678bb8216cec24bdcf39f533973901aa06f33a17d51"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: CharacterEntity",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
+      "language": "kotlin",
+      "line": 25,
+      "offset": 23,
+      "length": 15,
+      "code": {
+        "startLine": 23,
+        "length": 15,
+        "offset": 85,
+        "surroundingCode": "            .asFlow()\n            .mapToList(coroutineContext)\n            .map(List<CharacterEntity>::toCharacters)\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "d66c84baf1f8faea11a3209ebbc37618a229f11b29d8104f4ebf875175f9d406"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: CharacterEntity",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/common/main/kotlin/com/javiersc/samples/strategies/characters/GetCharacters.kt",
+      "language": "kotlin",
+      "line": 31,
+      "offset": 13,
+      "length": 15,
+      "code": {
+        "startLine": 29,
+        "length": 15,
+        "offset": 51,
+        "surroundingCode": "    map(CharacterEntity::toCharacter)\n\nprivate fun CharacterEntity.toCharacter(): Character = Character(id, name)\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies.commonMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "1a3bf4f414c5d3e583924b65bb53ba90be2b462a0f05db06e0f2cdd81589c615"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "samples/strategies/build.gradle.kts",
+      "language": "kotlin",
+      "line": 1,
+      "offset": 17,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 16,
+        "surroundingCode": "plugins { alias(libs.plugins.javiersc.hubdle) }\n\nhubdle {"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kaari.samples.strategies",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "b1713651033c6c1abd1b3caf2263fb09ad2e6c623aa2f8993295082fc4e6de90"
 }]}
