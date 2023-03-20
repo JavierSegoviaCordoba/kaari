@@ -1,7 +1,3 @@
-plugins {
-    alias(libs.plugins.javiersc.hubdle)
-}
-
 hubdle {
     config {
         languageSettings {
@@ -32,8 +28,8 @@ hubdle {
                         implementation(compose.ui)
                         implementation(compose.uiTooling)
 
-                        implementation(cashSqldelightCoroutinesExtensions())
-                        implementation(insertKoinKoinCore())
+                        implementation(hubdle.cash.sqldelight.coroutinesExtensions)
+                        implementation(hubdle.insert.koin.core)
                     }
                 }
             }
@@ -41,11 +37,11 @@ hubdle {
             android {
                 main {
                     dependencies {
-                        implementation(androidxCoreKtx())
-                        implementation(androidxComposeMaterial3())
-                        implementation(androidxComposeUi())
-                        implementation(androidxComposeUiTooling())
-                        implementation(androidxComposeUiToolingPreview())
+                        implementation(hubdle.androidx.core.coreKtx)
+                        implementation(hubdle.androidx.compose.material3.material3)
+                        implementation(hubdle.androidx.compose.ui.ui)
+                        implementation(hubdle.androidx.compose.ui.uiTooling)
+                        implementation(hubdle.androidx.compose.ui.uiToolingPreview)
                     }
                 }
             }

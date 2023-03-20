@@ -22,10 +22,10 @@ hubdle {
             common {
                 test {
                     dependencies {
-                        implementation(cashTurbine())
-                        implementation(russhwolfMultiplatformSettings())
-                        implementation(russhwolfMultiplatformSettingsCoroutines())
-                        implementation(russhwolfMultiplatformSettingsTest())
+                        implementation(hubdle.cash.turbine.turbine)
+                        implementation(hubdle.russhwolf.multiplatformSettings)
+                        implementation(hubdle.russhwolf.multiplatformSettingsCoroutines)
+                        implementation(hubdle.russhwolf.multiplatformSettingsTest)
                     }
                 }
             }
