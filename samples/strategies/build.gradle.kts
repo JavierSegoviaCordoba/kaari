@@ -1,5 +1,3 @@
-plugins { alias(libs.plugins.javiersc.hubdle) }
-
 hubdle {
     config {
         languageSettings { experimentalSerializationApi() }
@@ -21,26 +19,26 @@ hubdle {
             common {
                 main {
                     dependencies {
-                        implementation(cashSqldelightCoroutinesExtensions())
-                        implementation(insertKoinKoinCore())
-                        implementation(ktorClientCore())
-                        implementation(ktorClientOkhttp())
+                        implementation(hubdle.cash.sqldelight.coroutinesExtensions)
+                        implementation(hubdle.insert.koin.core)
+                        implementation(hubdle.ktor.ktorClientCore)
+                        implementation(hubdle.ktor.ktorClientOkHttp)
                     }
                 }
             }
             android {
                 main {
                     dependencies {
-                        implementation(cashSqldelightAndroidDriver())
-                        implementation(cashSqldelightSqliteDriver())
+                        implementation(hubdle.cash.sqldelight.androidDriver)
+                        implementation(hubdle.cash.sqldelight.sqliteDriver)
                     }
                 }
             }
             jvm {
                 main {
                     dependencies {
-                        implementation(cashSqldelightJdbcDriver())
-                        implementation(cashSqldelightSqliteDriver())
+                        implementation(hubdle.cash.sqldelight.jdbcDriver)
+                        implementation(hubdle.cash.sqldelight.sqliteDriver)
                     }
                 }
             }

@@ -1,7 +1,3 @@
-plugins {
-    alias(libs.plugins.javiersc.hubdle)
-}
-
 hubdle {
     config {
         languageSettings {
@@ -27,28 +23,27 @@ hubdle {
                         implementation(projects.samples.features)
                         implementation(projects.samples.strategies)
 
-                        implementation(androidxComposeMaterial3())
-                        implementation(androidxComposeUi())
-                        implementation(androidxComposeUiToolingPreview())
-                        implementation(androidxComposeUi())
-                        implementation(androidxCoreKtx())
-                        implementation(androidxNavigationCompose())
-                        implementation(insertKoinKoinAndroid())
-                        implementation(insertKoinKoinAndroidxCompose())
-                        implementation(insertKoinKoinCore())
+                        implementation(hubdle.androidx.compose.material3.material3)
+                        implementation(hubdle.androidx.compose.ui.ui)
+                        implementation(hubdle.androidx.compose.ui.uiToolingPreview)
+                        implementation(hubdle.androidx.core.coreKtx)
+                        implementation(hubdle.androidx.navigation.navigationCompose)
+                        implementation(hubdle.insert.koin.android)
+                        implementation(hubdle.insert.koin.androidx.compose)
+                        implementation(hubdle.insert.koin.core)
                     }
                 }
 
                 test {
                     dependencies {
-                        implementation(insertKoinKoinTest())
-                        implementation(insertKoinKoinTestJunit4())
+                        implementation(hubdle.insert.koin.test)
+                        implementation(hubdle.insert.koin.testJunit4)
                     }
                 }
 
                 sourceSet("debug") {
                     dependencies {
-                        implementation(androidxComposeUiTooling())
+                        implementation(hubdle.androidx.compose.ui.uiTooling)
                     }
                 }
             }
