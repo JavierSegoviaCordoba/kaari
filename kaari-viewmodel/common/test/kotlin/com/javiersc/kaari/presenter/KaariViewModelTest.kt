@@ -70,5 +70,6 @@ private data class FooState(val name: String, val counter: Int?)
 sealed class FooEffect {
 
     object Foo : FooEffect()
+
     object Bar : FooEffect()
 }
