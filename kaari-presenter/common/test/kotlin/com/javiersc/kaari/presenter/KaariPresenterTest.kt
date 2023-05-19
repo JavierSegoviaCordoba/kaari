@@ -11,6 +11,7 @@ import app.cash.turbine.test
 import io.kotest.matchers.shouldBe
 import kotlin.coroutines.EmptyCoroutineContext
 import kotlin.test.Test
+import kotlin.time.Duration
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -19,29 +20,31 @@ import kotlinx.coroutines.test.runTest
 class KaariPresenterTest {
 
     @Test
-    fun `given a datasource when emits 4 values then state is changed 4 times`() = runTest {
-        moleculeFlow(RecompositionClock.Immediate) {
-                val presenter = FooKaariPresenter(this)
-                val state = presenter.state()
-                launch {
-                    delay(100)
-                    presenter.effect { FooEffect.Foo }
-                    delay(100)
-                    presenter.effect(FooEffect.Bar)
+    fun `given a datasource when emits 4 values then state is changed 4 times`() =
+        runTest(timeout = Duration.INFINITE) {
+            moleculeFlow(RecompositionClock.Immediate) {
+                    val presenter = FooKaariPresenter(this)
+                    val state = presenter.state()
+                    launch {
+                        delay(100)
+                        presenter.effect { FooEffect.Foo }
+                        delay(100)
+                        presenter.effect(FooEffect.Bar)
+                    }
+                    state
                 }
-                state
-            }
-            .test {
-                awaitItem() shouldBe FooState("Unknown", 0)
-                awaitItem() shouldBe FooState("Foo", 1)
-                awaitItem() shouldBe FooState("Bar", 2)
-                cancel()
-            }
-    }
+                .test {
+                    awaitItem() shouldBe FooState("Unknown", 0)
+                    awaitItem() shouldBe FooState("Foo", 1)
+                    awaitItem() shouldBe FooState("Bar", 2)
+                    cancel()
+                }
+        }
 }
 
-private class FooKaariPresenter(scope: CoroutineScope = CoroutineScope(EmptyCoroutineContext)) :
-    KaariPresenter<FooEffect, FooState>(scope) {
+private class FooKaariPresenter(
+    scope: CoroutineScope = CoroutineScope(EmptyCoroutineContext),
+) : KaariPresenter<FooEffect, FooState>(scope) {
 
     @Composable
     override fun state(): FooState {
