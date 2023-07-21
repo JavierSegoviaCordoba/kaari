@@ -5,7 +5,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import app.cash.molecule.RecompositionClock
+import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
 import io.kotest.matchers.shouldBe
@@ -22,7 +22,7 @@ class KaariPresenterTest {
     @Test
     fun `given a datasource when emits 4 values then state is changed 4 times`() =
         runTest(timeout = Duration.INFINITE) {
-            moleculeFlow(RecompositionClock.Immediate) {
+            moleculeFlow(RecompositionMode.Immediate) {
                     val presenter = FooKaariPresenter(this)
                     val state = presenter.state()
                     launch {
