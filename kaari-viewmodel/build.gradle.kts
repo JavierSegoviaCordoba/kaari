@@ -28,17 +28,17 @@ hubdle {
                 }
                 test {
                     dependencies {
-                        implementation(hubdle.cash.turbine.turbine)
-                        implementation(hubdle.russhwolf.multiplatformSettings)
-                        implementation(hubdle.russhwolf.multiplatformSettingsCoroutines)
-                        implementation(hubdle.russhwolf.multiplatformSettingsTest)
+                        implementation(hubdle.cash.turbine)
+                        implementation(hubdle.russhwolf.multiplatform.settings)
+                        implementation(hubdle.russhwolf.multiplatform.settings.coroutines)
+                        implementation(hubdle.russhwolf.multiplatform.settings.test)
                     }
                 }
             }
             android {
                 main {
                     dependencies {
-                        api(hubdle.androidx.lifecycle.lifecycleViewmodelKtx)
+                        api(hubdle.androidx.lifecycle.viewmodel.ktx)
                     }
                 }
                 testOptions {

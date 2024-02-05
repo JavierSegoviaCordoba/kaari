@@ -28,7 +28,7 @@ hubdle {
                         implementation(compose.ui)
                         implementation(compose.uiTooling)
 
-                        implementation(hubdle.cash.sqldelight.coroutinesExtensions)
+                        implementation(hubdle.cash.sqldelight.coroutines.extensions)
                         implementation(hubdle.insert.koin.core)
                     }
                 }
@@ -37,11 +37,11 @@ hubdle {
             android {
                 main {
                     dependencies {
-                        implementation(hubdle.androidx.core.coreKtx)
-                        implementation(hubdle.androidx.compose.material3.material3)
-                        implementation(hubdle.androidx.compose.ui.ui)
-                        implementation(hubdle.androidx.compose.ui.uiTooling)
-                        implementation(hubdle.androidx.compose.ui.uiToolingPreview)
+                        implementation(hubdle.androidx.core.ktx)
+                        implementation(hubdle.androidx.compose.material3)
+                        implementation(hubdle.androidx.compose.ui)
+                        implementation(hubdle.androidx.compose.ui.tooling)
+                        implementation(hubdle.androidx.compose.ui.tooling.preview)
                     }
                 }
             }
