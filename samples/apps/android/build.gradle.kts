@@ -23,11 +23,11 @@ hubdle {
                         implementation(projects.samples.features)
                         implementation(projects.samples.strategies)
 
-                        implementation(hubdle.androidx.compose.material3.material3)
-                        implementation(hubdle.androidx.compose.ui.ui)
-                        implementation(hubdle.androidx.compose.ui.uiToolingPreview)
-                        implementation(hubdle.androidx.core.coreKtx)
-                        implementation(hubdle.androidx.navigation.navigationCompose)
+                        implementation(hubdle.androidx.compose.material3)
+                        implementation(hubdle.androidx.compose.ui)
+                        implementation(hubdle.androidx.compose.ui.tooling.preview)
+                        implementation(hubdle.androidx.core.ktx)
+                        implementation(hubdle.androidx.navigation.compose)
                         implementation(hubdle.insert.koin.android)
                         implementation(hubdle.insert.koin.androidx.compose)
                         implementation(hubdle.insert.koin.core)
@@ -37,13 +37,13 @@ hubdle {
                 test {
                     dependencies {
                         implementation(hubdle.insert.koin.test)
-                        implementation(hubdle.insert.koin.testJunit4)
+                        implementation(hubdle.insert.koin.test.junit4)
                     }
                 }
 
                 sourceSet("debug") {
                     dependencies {
-                        implementation(hubdle.androidx.compose.ui.uiTooling)
+                        implementation(hubdle.androidx.compose.ui.tooling)
                     }
                 }
             }
