@@ -15,16 +15,9 @@ import com.javiersc.samples.strategies.characters.Character
 import java.util.*
 
 @Composable
-fun MainScreen(
-    state: MainState,
-    onAddCharacter: (Character) -> Unit = {},
-) {
+fun MainScreen(state: MainState, onAddCharacter: (Character) -> Unit = {}) {
     Scaffold(
-        topBar = {
-            TopAppBar(
-                title = { Text(text = "Characters") },
-            )
-        },
+        topBar = { TopAppBar(title = { Text(text = "Characters") }) },
         content = {
             if (state.isLoading) CircularProgressIndicator()
 
@@ -35,24 +28,15 @@ fun MainScreen(
                         Button(
                             onClick = {
                                 val uuid = UUID.randomUUID().toString()
-                                onAddCharacter(
-                                    Character(
-                                        id = uuid,
-                                        name = "Foo + ${uuid.take(7)}",
-                                    ),
-                                )
+                                onAddCharacter(Character(id = uuid, name = "Foo + ${uuid.take(7)}"))
                             },
                             content = { Text(text = "Add") },
                         )
                     }
-                    items(state.characters) { character ->
-                        Character(
-                            name = character.name,
-                        )
-                    }
-                }
+                    items(state.characters) { character -> Character(name = character.name) }
+                },
             )
-        }
+        },
     )
 }
 
