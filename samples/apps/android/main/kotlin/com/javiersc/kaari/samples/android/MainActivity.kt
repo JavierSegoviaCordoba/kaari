@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
                             mainViewModel.state(),
                             onAddCharacter = {
                                 mainViewModel.effect { MainEffect.AddCharacter(it) }
-                            }
+                            },
                         )
                     }
                 }

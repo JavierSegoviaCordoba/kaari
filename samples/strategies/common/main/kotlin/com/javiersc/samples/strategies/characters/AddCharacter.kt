@@ -8,9 +8,7 @@ interface AddCharacter {
     suspend operator fun invoke(character: Character)
 }
 
-class AddCharacterImpl(
-    private val database: KaariDatabase,
-) : AddCharacter {
+class AddCharacterImpl(private val database: KaariDatabase) : AddCharacter {
 
     override suspend operator fun invoke(character: Character) {
         delay(300.milliseconds)

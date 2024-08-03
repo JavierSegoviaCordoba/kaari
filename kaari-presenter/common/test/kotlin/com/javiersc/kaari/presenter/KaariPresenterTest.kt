@@ -42,9 +42,8 @@ class KaariPresenterTest {
         }
 }
 
-private class FooKaariPresenter(
-    scope: CoroutineScope = CoroutineScope(EmptyCoroutineContext),
-) : KaariPresenter<FooEffect, FooState>(scope) {
+private class FooKaariPresenter(scope: CoroutineScope = CoroutineScope(EmptyCoroutineContext)) :
+    KaariPresenter<FooEffect, FooState>(scope) {
 
     @Composable
     override fun state(): FooState {

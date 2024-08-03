@@ -16,8 +16,8 @@ fun MainScreenPreview() = KaariPreview {
                 listOf(
                     com.javiersc.samples.strategies.characters.Character(
                         uuid,
-                        "Rick + ${uuid.take(7)}"
-                    ),
+                        "Rick + ${uuid.take(7)}",
+                    )
                 ),
         )
     )
