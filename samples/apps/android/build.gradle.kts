@@ -10,6 +10,12 @@ hubdle {
     kotlin {
         android {
             application {
+                android {
+                    buildTypes.named("debug") {
+                        signingConfig = null
+                    }
+                }
+
                 features {
                     compose()
                     molecule()
