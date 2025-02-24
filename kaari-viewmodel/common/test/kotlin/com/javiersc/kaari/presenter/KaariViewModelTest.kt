@@ -9,7 +9,7 @@ import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
 import com.javiersc.kaari.viewmodel.KaariViewModel
-import io.kotest.matchers.shouldBe
+import com.javiersc.kotlin.test.assertEquals
 import kotlin.coroutines.EmptyCoroutineContext
 import kotlin.test.Test
 import kotlin.time.Duration
@@ -35,9 +35,9 @@ class KaariViewModelTest {
                     state
                 }
                 .test {
-                    awaitItem() shouldBe FooState("Unknown", 0)
-                    awaitItem() shouldBe FooState("Foo", 1)
-                    awaitItem() shouldBe FooState("Bar", 2)
+                    awaitItem().assertEquals(FooState("Unknown", 0))
+                    awaitItem().assertEquals(FooState("Foo", 1))
+                    awaitItem().assertEquals(FooState("Bar", 2))
                     cancel()
                 }
         }
@@ -57,6 +57,7 @@ private class FooKaariPresenter(scope: CoroutineScope = CoroutineScope(EmptyCoro
                     name = "Foo"
                     counter = 1
                 }
+
                 FooEffect.Bar -> {
                     name = "Bar"
                     counter = 2
