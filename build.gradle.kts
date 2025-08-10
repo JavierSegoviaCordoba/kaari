@@ -23,6 +23,5 @@ hubdle {
             }
             site()
         }
-        nexus()
     }
 }
